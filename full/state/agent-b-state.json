@@ -1,0 +1,11 @@
+{
+  "agent": "agent-b",
+  "last_seen_msg_id": null,
+  "last_seen_commit": null,
+  "last_active": null,
+  "current_tasks": [],
+  "blocked_on": null,
+  "scheduler_interval_minutes": 10,
+  "session": "new",
+  "language": "english"
+}
