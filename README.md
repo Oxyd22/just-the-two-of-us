@@ -13,10 +13,11 @@ It worked surprisingly well. So we extracted the reusable system and wrote down 
 | Folder | What it is |
 |---|---|
 | [`retrospectives/`](retrospectives/) | The story. Two honest write-ups of the first experiment — one by Claude, one by Grok — including what broke and why. Start here. |
-| [`minimal/`](minimal/) | The smallest version that works: **3 files** (`COMMS`, `BLACKBOARD`, a project `KANBAN`) + per-agent state. For two agents that already work well together. |
+| [`radical/`](radical/) | The most radical minimum: **just `COMMS.md` + two tiny state files.** No blackboard, no protocol doc. For very disciplined, experienced pairs. |
+| [`minimal/`](minimal/) | Lightly structured: `COMMS` + `BLACKBOARD` (live state) + a short `PROTOCOL` + per-agent state. The sweet spot for most real use. |
 | [`full/`](full/) | The **v1.0 starter kit**: a versioned protocol, a decisions log, agent onboarding, a human quickstart, and a 7-step bootstrap. For dropping the workflow into a new project in ~10 minutes. |
 
-Both versions are file-based, append-only in comms, and put the human in control of priorities.
+All three are file-based, append-only in comms, and put the human in control of priorities. They're points on a spectrum — pick how much structure you actually want.
 
 ---
 
@@ -44,10 +45,12 @@ See [`retrospectives/`](retrospectives/) for the honest version, including the l
 
 ## Which version should I use?
 
-- **Just want to try it with two agents you trust?** → [`minimal/`](minimal/). Three files, no ceremony.
+- **Ultra-disciplined pair, want zero ceremony?** → [`radical/`](radical/). One comms file + state. That's it.
+- **Just want to try it with two agents you trust?** → [`minimal/`](minimal/). A little structure, no framework.
 - **Want something reusable, documented, with onboarding and a versioned protocol?** → [`full/`](full/). Read [`full/BOOTSTRAP.md`](full/BOOTSTRAP.md) and follow the 7 steps.
 
-You can always start minimal and graduate to full later.
+You can always start radical/minimal and graduate to full later. The most elegant minimum
+isn't the version with the fewest files — it's the one where you feel least stupid using it.
 
 ---
 
